@@ -30,3 +30,8 @@ git restore <yourfile>
 
 ## 查看difference
 git diff <yourfile>
+
+
+11
+1
+1
