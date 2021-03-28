@@ -31,7 +31,8 @@ git restore <yourfile>
 ## 查看difference
 git diff <yourfile>
 
+## 查看日志
+git log
+git log --pretty=oneline
 
 11
-1
-1
