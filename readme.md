@@ -3,12 +3,15 @@
 版本库又名仓库(**repository**)
 Git Bash
 
+## 列出隐藏文件
+ls -ah
+
+## 显示文件内容
+cat <yourfile>
+
 ## 仓库初始化
 cd <your_repository>
 git init
-
-## 列出隐藏文件
-ls -ah
 
 ## 把文件添加到仓库
 git add <yourfile>
