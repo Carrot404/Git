@@ -34,5 +34,3 @@ git diff <yourfile>
 ## 查看日志
 git log
 git log --pretty=oneline
-
-11
