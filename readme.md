@@ -22,3 +22,8 @@ git commit -m "wrote a readme file"
 why two steps? add + commit
 > 因为*commit*可以一次提交很多文件，所以可以多次*add*不同的文件
 
+## 查看仓库当前状态
+git status
+
+## 放弃更改
+git restore <yourfile>
