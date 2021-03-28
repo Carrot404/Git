@@ -27,3 +27,6 @@ git status
 
 ## 放弃更改
 git restore <yourfile>
+
+## 查看difference
+git diff <yourfile>
