@@ -38,4 +38,11 @@ git diff <yourfile>
 git log
 git log --pretty=oneline
 
-11
+## 版本回退
+git reset --hard <版本号> 
+git reset --hard HEAD^
+> HEAD 指向当前版本 HEAD^ 指向上一个版本 HEAD^^ 指向上上个版本 HEAD~100
+
+## 查看记录的命令
+git reflog
+> 找记录，查看版本号，回退版本
