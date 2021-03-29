@@ -105,3 +105,9 @@ why two steps? `add` + `commit`
 `$ git checkout -b dev` Switch to a new branch 'dev' 相当于以下两条指令
 `$ git branch dev`+`$ git checkout dev`
 `$ git branch` 查看当前分支
+`$ git merge dev` 合并指定分支到当前分支
+`$ git branch -d dev` 删除分支
+
+`$ git switch -c dev` 创建并切换到新的分支
+`$ git switch master` 切换分支
+hello and world
