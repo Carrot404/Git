@@ -154,3 +154,7 @@ why two steps? `add` + `commit`
 `Pull Request` 提交请求，`Fork`后对其进行修改后，向原作者请求，能成为项目的贡献者。
 `Merge` 合并，`Pull Request`审核通过之后将其合并到项目中
 `Watch` 观察 `Watch`项目之后，有任何更新，会收到更新通知
+
+## VSCode
+`+` = `git add`
+`√` = ··`git commit -m "备注信息"`
