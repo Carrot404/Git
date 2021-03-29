@@ -105,13 +105,36 @@ why two steps? `add` + `commit`
 `$ git checkout -b dev` Switch to a new branch 'dev' 相当于以下两条指令
 `$ git branch dev`+`$ git checkout dev`
 `$ git branch` 查看当前分支
-<<<<<<< HEAD
-hello or world
-=======
-`$ git merge dev` 合并指定分支到当前分支
-`$ git branch -d dev` 删除分支
 
-`$ git switch -c dev` 创建并切换到新的分支
-`$ git switch master` 切换分支
-hello or world
->>>>>>> dev
+## 解决冲突
+
+当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。
+`$ git log --graph` 分支合并图
+
+## 分支管理策略
+
+![strategy](branch_strategy.jpg)
+
+`$ git merge --no-ff -m "comment" dev` 普通模式合并，合并后的历史有分支。`fast forward`合并看不出曾经做过合并。
+
+## Bug分支
+
+## Feature分支
+
+## 多人协作
+
+## Rebase
+[Git tutorial](https://www.liaoxuefeng.com/wiki/896043488029600)
+
+## 创建标签
+`$ git tag v1.0` 打新标签，默认标签打在最新提交的commit
+`$ git tag v0.9 <commit id>` 标签打在对应commit id上
+`$ git tag` 查看标签
+`$ git show <tagname>` 查看标签信息
+`$ git tag -a v0.9 -m "version 0.1 released" <commit id>` 创建带有说明的标签
+
+==注意：标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签。==
+
+## 操作标签
+
+`$ git tag -d v0.9` 删除标签
