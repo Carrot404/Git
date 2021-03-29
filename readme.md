@@ -28,9 +28,6 @@ why two steps? `add` + `commit`
 ## 查看仓库当前状态
 `git status`
 
-## 放弃更改
-`git restore <yourfile>`
-
 ## 查看difference
 `git diff <yourfile>`
 
@@ -41,6 +38,7 @@ why two steps? `add` + `commit`
 ## 版本回退
 `git reset --hard <version>`
 `git reset --hard HEAD^`
+`git reset HEAD <file>`
 > `HEAD` 指向当前版本 `HEAD^` 指向上一个版本 `HEAD^^` 指向上上个版本 `HEAD~100`
 
 ## 查看记录的命令
@@ -56,3 +54,19 @@ why two steps? `add` + `commit`
 `Git`跟踪并管理的是修改，而非文件。
 
 ## 撤销修改
+`git restore --worktree <yourfile>`
+> 从暂存区恢复工作区(stage->worktree)
+`git restore -staged <yourfile>`
+> 从master恢复暂存区(matser->stage)
+`git restore --source=HEAD --staged --worktree <file>`
+> 从master同时恢复工作区和暂存区
+
+## 删除文件
+`rm <file>`
+`git rm <file>` `git add <file>`
+`git commit`
+> 手动删除文件，然后在`master`删除，提交
+`git restore <file>`
+> 手动删除后从版本库里恢复
+
+## 添加远程库
