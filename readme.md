@@ -28,8 +28,13 @@ why two steps? `add` + `commit`
 ## 查看仓库当前状态
 `git status`
 
+## 查看仓库文件
+`git ls-files`
+
 ## 查看difference
 `git diff <yourfile>`
+
+
 
 ## 查看日志
 `git log`
@@ -56,8 +61,10 @@ why two steps? `add` + `commit`
 ## 撤销修改
 `git restore --worktree <yourfile>`
 > 从暂存区恢复工作区(stage->worktree)
+
 `git restore -staged <yourfile>`
 > 从master恢复暂存区(matser->stage)
+
 `git restore --source=HEAD --staged --worktree <file>`
 > 从master同时恢复工作区和暂存区
 
@@ -66,7 +73,25 @@ why two steps? `add` + `commit`
 `git rm <file>` `git add <file>`
 `git commit`
 > 手动删除文件，然后在`master`删除，提交
+
 `git restore <file>`
 > 手动删除后从版本库里恢复
 
 ## 添加远程库
+`git remote add origin https://github.com/Carrot404/Git.git` origin 远程库的名字
+
+`git branch -M main` modify name of branch
+
+`git push -u origin main`
+> 把本地库的内容推送到远程 `-u`参数不但会推送给远程，还会将本地和远程分支关联起来
+
+`git branch` 查看本地所有分支
+`git branch -r` 查看远程所有分支
+`git branch -a` 查看本地和远程所有分支
+`git branch -d` 删除本地分支
+`git branch -d -r` 删除远程分支 删除后还要推送到服务器`git push origin :<branchname>`
+
+## 删除远程库
+`git remote rm <name>`
+> 删除只是结束了本地和远程的绑定关系，并不是物理上删除了远程库。要真正删除远程库，需要登录到GitHub上删除。
+`git remote -v`
