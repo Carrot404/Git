@@ -105,3 +105,4 @@ why two steps? `add` + `commit`
 `$ git checkout -b dev` Switch to a new branch 'dev' 相当于以下两条指令
 `$ git branch dev`+`$ git checkout dev`
 `$ git branch` 查看当前分支
+hello or world
