@@ -138,3 +138,6 @@ why two steps? `add` + `commit`
 ## 操作标签
 
 `$ git tag -d v0.9` 删除标签
+`$ git push origin <tagname>` 推送标签到远程
+`$ git push origin --tag` 一次性推送全部未推送到远程的本地标签
+`$ git push origin :refs/tags/v0.9` 先本地删除标签，再删除远程标签
