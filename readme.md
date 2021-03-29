@@ -95,7 +95,10 @@ why two steps? `add` + `commit`
 `$ git remote -v`
 
 ## 从远程库克隆
-`$ git clone <ssh>`
+`$ git clone <ssh>` 本地没有仓库，将远程仓库整个下载过来
+`$ git pull origin master` 从远程获取代码并合并本地的版本
+
+![git](git.jpg)
 
 ## 创建与合并分支
 
@@ -141,3 +144,13 @@ why two steps? `add` + `commit`
 `$ git push origin <tagname>` 推送标签到远程
 `$ git push origin --tag` 一次性推送全部未推送到远程的本地标签
 `$ git push origin :refs/tags/v0.9` 先本地删除标签，再删除远程标签
+
+## GitHub
+`Repository` 仓库
+`Issue` 问题
+`Star` 点赞，点赞过的项目会保存在`Star`中
+`branch` 仓库的平行版本
+`Fork` 拉分支，能复制一个完全相同的项目到账号中
+`Pull Request` 提交请求，`Fork`后对其进行修改后，向原作者请求，能成为项目的贡献者。
+`Merge` 合并，`Pull Request`审核通过之后将其合并到项目中
+`Watch` 观察 `Watch`项目之后，有任何更新，会收到更新通知
