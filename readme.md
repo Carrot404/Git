@@ -55,7 +55,7 @@ why two steps? `add` + `commit`
 ## 工作区和暂存区
 工作区(Working Directory) --电脑里能看到的目录，如`Git`文件夹就是一个工作区
 版本库(Repository) --工作区有一个隐藏目录`.git`,是Git版本库。其中最重要的是称为**stage**(*index*)的暂存区,还有Git自动为我们自动创建的第一个分支`master`，以及一个指向`master`的一个指针`HEAD`。
-![concept](concept1.jpg)
+![concept1](https://i.loli.net/2021/06/18/BsuzdimyKGStonD.png)
 
 ## 管理修改
 `Git`跟踪并管理的是修改，而非文件。
@@ -100,12 +100,12 @@ why two steps? `add` + `commit`
 `$ git clone <ssh>` 本地没有仓库，将远程仓库整个下载过来
 `$ git pull origin master` 从远程获取代码并合并本地的版本
 
-![git](git.jpg)
+![git](https://i.loli.net/2021/06/18/UsAWXofJSbN5xtM.jpg)
 
 ## 创建与合并分支
 
-![branch1](branch1.jpg)
-![branch2](branch2.jpg)
+![branch1](https://i.loli.net/2021/06/18/ZmjqQ6b7H1E4clz.png)
+![branch2](https://i.loli.net/2021/06/18/WLkSnRa9OPz65Yt.png)
 
 `$ git checkout -b dev` Switch to a new branch 'dev' 相当于以下两条指令
 `$ git branch dev`+`$ git checkout dev`
@@ -118,7 +118,7 @@ why two steps? `add` + `commit`
 
 ## 分支管理策略
 
-![strategy](branch_strategy.jpg)
+![strategy](https://i.loli.net/2021/06/18/TAvFZ2BypwrHXdz.png)
 
 `$ git merge --no-ff -m "comment" dev` 普通模式合并，合并后的历史有分支。`fast forward`合并看不出曾经做过合并。
 
