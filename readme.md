@@ -17,6 +17,8 @@ Git Bash
 
 ## 把文件添加到仓库
 `$ git add <yourfile>`
+`$ git add all`
+`$ git add .`
 
 ## 把文件提交到仓库
 `$ git commit -m "wrote a readme file"`
